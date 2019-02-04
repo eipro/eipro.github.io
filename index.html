@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+
+  
+  <meta name="description" content="توی این وبلاگ سعی میکنم از خودم , دنیا , علم و مردم یا هرچیزی که تعجب آور باشه برام و یا مهم باشه بنویسم">
+  
+
+  
+
+  
+  
+
+  
+  <title>مردی با کیبورد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="توی این وبلاگ سعی میکنم از خودم , دنیا , علم و مردم یا هرچیزی که تعجب آور باشه برام و یا مهم باشه بنویسم">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مردی با کیبورد">
+<meta property="og:url" content="https://eipro.github.io/index.html">
+<meta property="og:site_name" content="مردی با کیبورد">
+<meta property="og:description" content="توی این وبلاگ سعی میکنم از خودم , دنیا , علم و مردم یا هرچیزی که تعجب آور باشه برام و یا مهم باشه بنویسم">
+<meta property="og:locale" content="fa">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="مردی با کیبورد">
+<meta name="twitter:description" content="توی این وبلاگ سعی میکنم از خودم , دنیا , علم و مردم یا هرچیزی که تعجب آور باشه برام و یا مهم باشه بنویسم">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rtl.css">
+  
+
+
+  <!-- baidu webmaster push -->
+  <!-- <script src='//push.zhanzhang.baidu.com/push.js'></script> -->
+</head>
+</html>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="مردی با کیبورد" rel="home">مردی با کیبورد</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">مینویسم پس هستم</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">منو</button>
+            <a class="assistive-text" href="/#content" title="بالا">بالا</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">صفحه اول</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">آرشیو</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about">تماس و درباره</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main">
+  
+    <article id="post-tor-exit-node-country-list" class="post-tor-exit-node-country-list post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/tor-exit-node-country-list/">لیست کشور های exit node برای تور</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/tor-exit-node-country-list/">
+    <time datetime="2018-09-28T20:48:18.000Z" class="entry-date">
+        ۲۰۱۸-۰۹-۲۹
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>در این پست با نحوی تنظیم <code>exit node</code> تور آشنا میشیم که کمک های فراوانی به ما توی گشت و گذار میکنه یکی از شایع ترین ها اینه که حتما شما هم وقتی از تور استفاده میکنید و به کپچای گوگل می رسید میگید اه باز ایییین :) و خوب راه حلی هست برای این که میتونید از <code>exit node</code> استفاده کنید .<br>من در این پست بر فرض این که شما تور رو نصب کردید و آماده هست جلو میریم , خوب شما نیاز هست فایل <code>torrc</code> رو ویرایش کنید :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/tor/torrc</span><br></pre></td></tr></table></figure><br>به آخر فایل رفته و متن زیر رو اضافه کنید :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ExitNodes &#123;&#125; StrictNodes 0</span><br></pre></td></tr></table></figure><br>حال شما باید از لیست کشور های <code>exit node</code> یکی رو انتخاب کنید و داخل {} قرار بدید من لیست نسبتا کاملی رو براتون آماده کردم.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br></pre></td><td class="code"><pre><span class="line">Country                               Abbrev</span><br><span class="line">ASCENSION ISLAND                      &#123;ac&#125;</span><br><span class="line">AFGHANISTAN                           &#123;af&#125;</span><br><span class="line">ALAND                                 &#123;ax&#125;</span><br><span class="line">ALBANIA                               &#123;al&#125;</span><br><span class="line">ALGERIA                               &#123;dz&#125;</span><br><span class="line">ANDORRA                               &#123;ad&#125;</span><br><span class="line">ANGOLA                                &#123;ao&#125;</span><br><span class="line">ANGUILLA                              &#123;ai&#125;</span><br><span class="line">ANTARCTICA                            &#123;aq&#125;</span><br><span class="line">ANTIGUA AND BARBUDA                   &#123;ag&#125;</span><br><span class="line">ARGENTINA REPUBLIC                    &#123;ar&#125;</span><br><span class="line">ARMENIA                               &#123;am&#125;</span><br><span class="line">ARUBA                                 &#123;aw&#125;</span><br><span class="line">AUSTRALIA                             &#123;au&#125;</span><br><span class="line">AUSTRIA                               &#123;at&#125;</span><br><span class="line">AZERBAIJAN                            &#123;az&#125;</span><br><span class="line">BAHAMAS                               &#123;bs&#125;</span><br><span class="line">BAHRAIN                               &#123;bh&#125;</span><br><span class="line">BANGLADESH                            &#123;bd&#125;</span><br><span class="line">BARBADOS                              &#123;bb&#125;</span><br><span class="line">BELARUS                               &#123;by&#125;</span><br><span class="line">BELGIUM                               &#123;be&#125;</span><br><span class="line">BELIZE                                &#123;bz&#125;</span><br><span class="line">BENIN                                 &#123;bj&#125;</span><br><span class="line">BERMUDA                               &#123;bm&#125;</span><br><span class="line">BHUTAN                                &#123;bt&#125;</span><br><span class="line">BOLIVIA                               &#123;bo&#125;</span><br><span class="line">BOSNIA AND HERZEGOVINA                &#123;ba&#125;</span><br><span class="line">BOTSWANA                              &#123;bw&#125;</span><br><span class="line">BOUVET ISLAND                         &#123;bv&#125;</span><br><span class="line">BRAZIL                                &#123;br&#125;</span><br><span class="line">BRITISH INDIAN OCEAN TERR             &#123;io&#125;</span><br><span class="line">BRITISH VIRGIN ISLANDS                &#123;vg&#125;</span><br><span class="line">BRUNEI DARUSSALAM                     &#123;bn&#125;</span><br><span class="line">BULGARIA                              &#123;bg&#125;</span><br><span class="line">BURKINA FASO                          &#123;bf&#125;</span><br><span class="line">BURUNDI                               &#123;bi&#125;</span><br><span class="line">CAMBODIA                              &#123;kh&#125;</span><br><span class="line">CAMEROON                              &#123;cm&#125;</span><br><span class="line">CANADA                                &#123;ca&#125;</span><br><span class="line">CAPE VERDE                            &#123;cv&#125;</span><br><span class="line">CAYMAN ISLANDS                        &#123;ky&#125;</span><br><span class="line">CENTRAL AFRICAN REPUBLIC              &#123;cf&#125;</span><br><span class="line">CHAD                                  &#123;td&#125;</span><br><span class="line">CHILE                                 &#123;cl&#125;</span><br><span class="line">PEOPLE&apos;S REPUBLIC OF CHINA            &#123;cn&#125;</span><br><span class="line">CHRISTMAS ISLANDS                     &#123;cx&#125;</span><br><span class="line">COCOS ISLANDS                         &#123;cc&#125;</span><br><span class="line">COLOMBIA                              &#123;co&#125;</span><br><span class="line">COMORAS                               &#123;km&#125;</span><br><span class="line">CONGO                                 &#123;cg&#125;</span><br><span class="line">CONGO (DEMOCRATIC REPUBLIC)           &#123;cd&#125;</span><br><span class="line">COOK ISLANDS                          &#123;ck&#125;</span><br><span class="line">COSTA RICA                            &#123;cr&#125;</span><br><span class="line">COTE D IVOIRE                         &#123;ci&#125;</span><br><span class="line">CROATIA                               &#123;hr&#125;</span><br><span class="line">CUBA                                  &#123;cu&#125;</span><br><span class="line">CYPRUS                                &#123;cy&#125;</span><br><span class="line">CZECH REPUBLIC                        &#123;cz&#125;</span><br><span class="line">DENMARK                               &#123;dk&#125;</span><br><span class="line">DJIBOUTI                              &#123;dj&#125;</span><br><span class="line">DOMINICA                              &#123;dm&#125;</span><br><span class="line">DOMINICAN REPUBLIC                    &#123;do&#125;</span><br><span class="line">EAST TIMOR                            &#123;tp&#125;</span><br><span class="line">ECUADOR                               &#123;ec&#125;</span><br><span class="line">EGYPT                                 &#123;eg&#125;</span><br><span class="line">EL SALVADOR                           &#123;sv&#125;</span><br><span class="line">EQUATORIAL GUINEA                     &#123;gq&#125;</span><br><span class="line">ESTONIA                               &#123;ee&#125;</span><br><span class="line">ETHIOPIA                              &#123;et&#125;</span><br><span class="line">FALKLAND ISLANDS                      &#123;fk&#125;</span><br><span class="line">FAROE ISLANDS                         &#123;fo&#125;</span><br><span class="line">FIJI                                  &#123;fj&#125;</span><br><span class="line">FINLAND                               &#123;fi&#125;</span><br><span class="line">FRANCE                                &#123;fr&#125;</span><br><span class="line">FRANCE METROPOLITAN                   &#123;fx&#125;</span><br><span class="line">FRENCH GUIANA                         &#123;gf&#125;</span><br><span class="line">FRENCH POLYNESIA                      &#123;pf&#125;</span><br><span class="line">FRENCH SOUTHERN TERRITORIES           &#123;tf&#125;</span><br><span class="line">GABON                                 &#123;ga&#125;</span><br><span class="line">GAMBIA                                &#123;gm&#125;</span><br><span class="line">GEORGIA                               &#123;ge&#125;</span><br><span class="line">GERMANY                               &#123;de&#125;</span><br><span class="line">GHANA                                 &#123;gh&#125;</span><br><span class="line">GIBRALTER                             &#123;gi&#125;</span><br><span class="line">GREECE                                &#123;gr&#125;</span><br><span class="line">GREENLAND                             &#123;gl&#125;</span><br><span class="line">GRENADA                               &#123;gd&#125;</span><br><span class="line">GUADELOUPE                            &#123;gp&#125;</span><br><span class="line">GUAM                                  &#123;gu&#125;</span><br><span class="line">GUATEMALA                             &#123;gt&#125;</span><br><span class="line">GUINEA                                &#123;gn&#125;</span><br><span class="line">GUINEA-BISSAU                         &#123;gw&#125;</span><br><span class="line">GUYANA                                &#123;gy&#125;</span><br><span class="line">HAITI                                 &#123;ht&#125;</span><br><span class="line">HEARD &amp;amp; MCDONALD ISLAND           &#123;hm&#125;</span><br><span class="line">HONDURAS                              &#123;hn&#125;</span><br><span class="line">HONG KONG                             &#123;hk&#125;</span><br><span class="line">HUNGARY                               &#123;hu&#125;</span><br><span class="line">ICELAND                               &#123;is&#125;</span><br><span class="line">INDIA                                 &#123;in&#125;</span><br><span class="line">INDONESIA                             &#123;id&#125;</span><br><span class="line">IRAN, ISLAMIC REPUBLIC OF             &#123;ir&#125;</span><br><span class="line">IRAQ                                  &#123;iq&#125;</span><br><span class="line">IRELAND                               &#123;ie&#125;</span><br><span class="line">ISLE OF MAN                           &#123;im&#125;</span><br><span class="line">ISRAEL                                &#123;il&#125;</span><br><span class="line">ITALY                                 &#123;it&#125;</span><br><span class="line">JAMAICA                               &#123;jm&#125;</span><br><span class="line">JAPAN                                 &#123;jp&#125;</span><br><span class="line">JORDAN                                &#123;jo&#125;</span><br><span class="line">KAZAKHSTAN                            &#123;kz&#125;</span><br><span class="line">KENYA                                 &#123;ke&#125;</span><br><span class="line">KIRIBATI                              &#123;ki&#125;</span><br><span class="line">KOREA, DEM. PEOPLES REP OF            &#123;kp&#125;</span><br><span class="line">KOREA, REPUBLIC OF                    &#123;kr&#125;</span><br><span class="line">KUWAIT                                &#123;kw&#125;</span><br><span class="line">KYRGYZSTAN                            &#123;kg&#125;</span><br><span class="line">LAO PEOPLE&apos;S DEM. REPUBLIC            &#123;la&#125;</span><br><span class="line">LATVIA                                &#123;lv&#125;</span><br><span class="line">LEBANON                               &#123;lb&#125;</span><br><span class="line">LESOTHO                               &#123;ls&#125;</span><br><span class="line">LIBERIA                               &#123;lr&#125;</span><br><span class="line">LIBYAN ARAB JAMAHIRIYA                &#123;ly&#125;</span><br><span class="line">LIECHTENSTEIN                         &#123;li&#125;</span><br><span class="line">LITHUANIA                             &#123;lt&#125;</span><br><span class="line">LUXEMBOURG                            &#123;lu&#125;</span><br><span class="line">MACAO                                 &#123;mo&#125;</span><br><span class="line">MACEDONIA                             &#123;mk&#125;</span><br><span class="line">MADAGASCAR                            &#123;mg&#125;</span><br><span class="line">MALAWI                                &#123;mw&#125;</span><br><span class="line">MALAYSIA                              &#123;my&#125;</span><br><span class="line">MALDIVES                              &#123;mv&#125;</span><br><span class="line">MALI                                  &#123;ml&#125;</span><br><span class="line">MALTA                                 &#123;mt&#125;</span><br><span class="line">MARSHALL ISLANDS                      &#123;mh&#125;</span><br><span class="line">MARTINIQUE                            &#123;mq&#125;</span><br><span class="line">MAURITANIA                            &#123;mr&#125;</span><br><span class="line">MAURITIUS                             &#123;mu&#125;</span><br><span class="line">MAYOTTE                               &#123;yt&#125;</span><br><span class="line">MEXICO                                &#123;mx&#125;</span><br><span class="line">MICRONESIA                            &#123;fm&#125;</span><br><span class="line">MOLDAVA REPUBLIC OF                   &#123;md&#125;</span><br><span class="line">MONACO                                &#123;mc&#125;</span><br><span class="line">MONGOLIA                              &#123;mn&#125;</span><br><span class="line">MONTENEGRO                            &#123;me&#125;</span><br><span class="line">MONTSERRAT                            &#123;ms&#125;</span><br><span class="line">MOROCCO                               &#123;ma&#125;</span><br><span class="line">MOZAMBIQUE                            &#123;mz&#125;</span><br><span class="line">MYANMAR                               &#123;mm&#125;</span><br><span class="line">NAMIBIA                               &#123;na&#125;</span><br><span class="line">NAURU                                 &#123;nr&#125;</span><br><span class="line">NEPAL                                 &#123;np&#125;</span><br><span class="line">NETHERLANDS ANTILLES                  &#123;an&#125;</span><br><span class="line">NETHERLANDS, THE                      &#123;nl&#125;</span><br><span class="line">NEW CALEDONIA                         &#123;nc&#125;</span><br><span class="line">NEW ZEALAND                           &#123;nz&#125;</span><br><span class="line">NICARAGUA                             &#123;ni&#125;</span><br><span class="line">NIGER                                 &#123;ne&#125;</span><br><span class="line">NIGERIA                               &#123;ng&#125;</span><br><span class="line">NIUE                                  &#123;nu&#125;</span><br><span class="line">NORFOLK ISLAND                        &#123;nf&#125;</span><br><span class="line">NORTHERN MARIANA ISLANDS              &#123;mp&#125;</span><br><span class="line">NORWAY                                &#123;no&#125;</span><br><span class="line">OMAN                                  &#123;om&#125;</span><br><span class="line">PAKISTAN                              &#123;pk&#125;</span><br><span class="line">PALAU                                 &#123;pw&#125;</span><br><span class="line">PALESTINE                             &#123;ps&#125;</span><br><span class="line">PANAMA                                &#123;pa&#125;</span><br><span class="line">PAPUA NEW GUINEA                      &#123;pg&#125;</span><br><span class="line">PARAGUAY                              &#123;py&#125;</span><br><span class="line">PERU                                  &#123;pe&#125;</span><br><span class="line">PHILIPPINES (REPUBLIC OF THE)         &#123;ph&#125;</span><br><span class="line">PITCAIRN                              &#123;pn&#125;</span><br><span class="line">POLAND                                &#123;pl&#125;</span><br><span class="line">PORTUGAL                              &#123;pt&#125;</span><br><span class="line">PUERTO RICO                           &#123;pr&#125;</span><br><span class="line">QATAR                                 &#123;qa&#125;</span><br><span class="line">REUNION                               &#123;re&#125;</span><br><span class="line">ROMANIA                               &#123;ro&#125;</span><br><span class="line">RUSSIAN FEDERATION                    &#123;ru&#125;</span><br><span class="line">RWANDA                                &#123;rw&#125;</span><br><span class="line">SAMOA                                 &#123;ws&#125;</span><br><span class="line">SAN MARINO                            &#123;sm&#125;</span><br><span class="line">SAO TOME/PRINCIPE                     &#123;st&#125;</span><br><span class="line">SAUDI ARABIA                          &#123;sa&#125;</span><br><span class="line">SCOTLAND                              &#123;uk&#125;</span><br><span class="line">SENEGAL                               &#123;sn&#125;</span><br><span class="line">SERBIA                                &#123;rs&#125;</span><br><span class="line">SEYCHELLES                            &#123;sc&#125;</span><br><span class="line">SIERRA LEONE                          &#123;sl&#125;</span><br><span class="line">SINGAPORE                             &#123;sg&#125;</span><br><span class="line">SLOVAKIA                              &#123;sk&#125;</span><br><span class="line">SLOVENIA                              &#123;si&#125;</span><br><span class="line">SOLOMON ISLANDS                       &#123;sb&#125;</span><br><span class="line">SOMALIA                               &#123;so&#125;</span><br><span class="line">SOMOA,GILBERT,ELLICE ISLANDS          &#123;as&#125;</span><br><span class="line">SOUTH AFRICA                          &#123;za&#125;</span><br><span class="line">SOUTH GEORGIA, SOUTH SANDWICH ISLANDS &#123;gs&#125;</span><br><span class="line">SOVIET UNION                          &#123;su&#125;</span><br><span class="line">SPAIN                                 &#123;es&#125;</span><br><span class="line">SRI LANKA                             &#123;lk&#125;</span><br><span class="line">ST. HELENA                            &#123;sh&#125;</span><br><span class="line">ST. KITTS AND NEVIS                   &#123;kn&#125;</span><br><span class="line">ST. LUCIA                             &#123;lc&#125;</span><br><span class="line">ST. PIERRE AND MIQUELON               &#123;pm&#125;</span><br><span class="line">ST. VINCENT &amp;amp; THE GRENADINES      &#123;vc&#125;</span><br><span class="line">SUDAN                                 &#123;sd&#125;</span><br><span class="line">SURINAME                              &#123;sr&#125;</span><br><span class="line">SVALBARD AND JAN MAYEN                &#123;sj&#125;</span><br><span class="line">SWAZILAND                             &#123;sz&#125;</span><br><span class="line">SWEDEN                                &#123;se&#125;</span><br><span class="line">SWITZERLAND                           &#123;ch&#125;</span><br><span class="line">SYRIAN ARAB REPUBLIC                  &#123;sy&#125;</span><br><span class="line">TAIWAN                                &#123;tw&#125;</span><br><span class="line">TAJIKISTAN                            &#123;tj&#125;</span><br><span class="line">TANZANIA, UNITED REPUBLIC OF          &#123;tz&#125;</span><br><span class="line">THAILAND                              &#123;th&#125;</span><br><span class="line">TOGO                                  &#123;tg&#125;</span><br><span class="line">TOKELAU                               &#123;tk&#125;</span><br><span class="line">TONGA                                 &#123;to&#125;</span><br><span class="line">TRINIDAD AND TOBAGO                   &#123;tt&#125;</span><br><span class="line">TUNISIA                               &#123;tn&#125;</span><br><span class="line">TURKEY                                &#123;tr&#125;</span><br><span class="line">TURKMENISTAN                          &#123;tm&#125;</span><br><span class="line">TURKS AND CALCOS ISLANDS              &#123;tc&#125;</span><br><span class="line">TUVALU                                &#123;tv&#125;</span><br><span class="line">UGANDA                                &#123;ug&#125;</span><br><span class="line">UKRAINE                               &#123;ua&#125;</span><br><span class="line">UNITED ARAB EMIRATES                  &#123;ae&#125;</span><br><span class="line">UNITED KINGDOM (no new registrations) &#123;gb&#125;</span><br><span class="line">UNITED KINGDOM                        &#123;uk&#125;</span><br><span class="line">UNITED STATES                         &#123;us&#125;</span><br><span class="line">UNITED STATES MINOR OUTL.IS.          &#123;um&#125;</span><br><span class="line">URUGUAY                               &#123;uy&#125;</span><br><span class="line">UZBEKISTAN                            &#123;uz&#125;</span><br><span class="line">VANUATU                               &#123;vu&#125;</span><br><span class="line">VATICAN CITY STATE                    &#123;va&#125;</span><br><span class="line">VENEZUELA                             &#123;ve&#125;</span><br><span class="line">VIET NAM                              &#123;vn&#125;</span><br><span class="line">VIRGIN ISLANDS (USA)                  &#123;vi&#125;</span><br><span class="line">WALLIS AND FUTUNA ISLANDS             &#123;wf&#125;</span><br><span class="line">WESTERN SAHARA                        &#123;eh&#125;</span><br><span class="line">YEMEN                                 &#123;ye&#125;</span><br><span class="line">ZAMBIA                                &#123;zm&#125;</span><br><span class="line">ZIMBABWE                              &#123;zw&#125;</span><br></pre></td></tr></table></figure><br>میتونید از چندین خروجی استفاده کنید مثل {us,tk,zm} شما همچنین میتوند علاوه بر تعین خروجی گره ها از ورودی ها هم استفاده کنید :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EntryNodes &#123;&#125; StrictNodes 0</span><br></pre></td></tr></table></figure></p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/تور/">تور</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exit-node/">exit node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/exit-node-list/">exit node list</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tor/">tor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/تور/">تور</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-New-blog-theme" class="post-New-blog-theme post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/New-blog-theme/">قالب جدبد وبلاگ</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/New-blog-theme/">
+    <time datetime="2018-08-10T17:39:04.000Z" class="entry-date">
+        ۲۰۱۸-۰۸-۱۰
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>##آپدیت : از این تم دیگه استفاده نمیکنم اگه شما دوست دارید استفاده کنید :)<br>داشتم قالب های hexo رو نگاه میکردی تصادفی چشمم به یه قالب فارسی خورد وقتی برسیش کردم دیدم زیاد خوشم نمیاد ازش و از اون جایی هم که دوست ندارم چرخ رو دوباره اختراع کنم یک قالب از بین <a href="https://github.com/geekrainy/hexo-theme-purely" target="_blank" rel="noopener">قالب</a> های خارجی انتخاب کردم و برای زبان فارسی تغیرش دادم و در گیت هاب منتشر کردم تا اگر کسی دیه هم نیاز داشت بتونه به راحتی استفاده کنه.</p>
+<p>###چه چیز های اضافه کردم ؟<br>از همه مهم تر فونت هست که میدونید فونت های زبان انگلیسی مناسب زبان فارسی نیست برای همین من از یک فونت زیبا و رایگان فارسی به نام <a href="https://github.com/rastikerdar/vazir-font" target="_blank" rel="noopener">وزیر</a> استفاده کردم .<br>گام بعدی تغیر استایل ها از حالت انگلیسی به فارسی بود تا مطالب به درستی نمایش داده بشن بود .<br>و در نهایت اضافه کردن زبان فارسی به قالب بود .<br>میتونید از لینک زیر مخزن قالب رو مشاهده کنید<br><a href="https://github.com/eipro/purely-rtl" target="_blank" rel="noopener">purely-rtl</a></p>
+
+      
+      <footer class="entry-meta">
+
+      
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/قالب-فارسی-hexo/">قالب فارسی hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/مردی-با-کیبرد/">مردی با کیبرد</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-month-book-2" class="post-month-book-2 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/month-book-2/">معرفی کتاب - شماره ۲</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/month-book-2/">
+    <time datetime="2018-06-15T17:32:53.000Z" class="entry-date">
+        ۲۰۱۸-۰۶-۱۵
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>امروز بعد از کلی تاخیر توی برنامه ریزی که برای این قسمت داشتم دارم راجبش مینویسم , چیزی هم که cal نشون میده میگه اول ماه نیست که<br>این پست رو بنویسم ولی چون چندتا جا انداختم دارم نا منظم مینویسم از این به بعد سعی میکنم منظم بنویسم خوب بریم سراغ کتاب :<br>این کتابی که توی این مدت خوندم زیاد طولانی نبود و مناسب مسیر سفر بود ازش هم خوشم اومد به نظر من مناسب هست برای کسانی که با خودشون دو دوتا چهارتا دارند<br>نویسنده این کتاب دکتر علی علی کریمی هست نا گفته نماند آخر این کتاب منو یاد درس “اجتماعی” دبیرستان انداخت .<br><img src="/images/photo_2.jpg" title="شما نابغه هستید اگر"></p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/کتاب/">کتاب</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/شما-نابغه-هستید-اگر-؟/">شما نابغه هستید اگر ؟</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/معرفی-کتاب/">معرفی کتاب</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-Contact-form-with-Telegram-Bot-API" class="post-Contact-form-with-Telegram-Bot-API post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/Contact-form-with-Telegram-Bot-API/">فرم تماس با استفاده از API تلگرام</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/Contact-form-with-Telegram-Bot-API/">
+    <time datetime="2018-03-31T13:57:23.000Z" class="entry-date">
+        ۲۰۱۸-۰۳-۳۱
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>دیروز برای طفریح یک پروژه کامل ساده رو شروع کردم و در نهایت امروز روی گیت هاب منتشر کردم<br>این یه فرم تماس هست که شما میتونید از اون برای خودتون (با توجه به GPL) استفاده کنید کار کرد به این صورت هست که اطلاعات تماس از طریق API ربات های تلگرام برای شما ارسال میشه<br>برای استفاده شما باید فایل ‍‍tele.php رو ویرایش کنید و توکن ربات خودتون و آیدی عددی خودتون رو قرار بدید<br>برای ساخت ربات همون طوری که میدونید یا که نمی دونید باید از ربات t.me/BotFather استفاده کنید و برای پیدا کردن آیدی عددی خودتون هم از این ربات t.me/userinfobot استفاده کنید .<br>من استایل خاصی استفاده نکردم فقط سعی کردم یکم ظاهر خوبی داشته باشه (برای اسکرین شات =) ) شما میتونید استایل خودتون رو استفاده کنید برای قسم های مختلف .</p>
+<p>لینک سورس : <a href="https://github.com/eipro/ContactForm" target="_blank" rel="noopener">ContactForm git</a></p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/پی-اچ-پی/">پی اچ پی</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Contact-form-with-Telegram-Bot-API/">Contact form with Telegram Bot API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/telegram-API/">telegram API</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/فرم-تماس-با-تلگرام/">فرم تماس با تلگرام</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-color-year" class="post-color-year post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/color-year/">انتخاب رنگ سال | چرا ؟ چگونه؟ از کی؟</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/color-year/">
+    <time datetime="2018-03-09T18:23:41.000Z" class="entry-date">
+        ۲۰۱۸-۰۳-۰۹
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>دیشب داشتم با یکی از دوستام بحث میکردم که اگه مانتوی بنفش بپوشی شبیه لبو میشی اونم هی میگفت ……………………………(این تیکه نقطه ها حذف شده چون راضی نبودن :| ) کرد . و من به عنوان یه گیک دوست داشتم بدونم اصلا این فلسفه رنگ سال چیه ؟! میدونستم یه چیزی رو دارن بهمون قالب میکنن مثل همون رنگ های که باید تو بین بچه ها انتخاب بشه پسرا آبی ، دخترا هم صورتی :| اگه دوست دارید به رادیو گیک جادی jadi.net یه سر بزنید شماره های ویژه جوراب شلواری رو گوش کنید . بیایید با هم ببینیم که این رنگ سال چی چی هست اصلا؟!</p>
+<p>خوب در سال ۱۹۶۳ آقای لارنس که دانشجوی شیمی بود یه استانداردی برای رنگ ها درست کرد که برای هر رنگ یه عدد داده میشد و از گیج شدن جلو گیری میکرد مثلا دیه نیاز نبود سر اسم رنگ های که کمی با هم در تفاوت هستن بحث کنیم و براشون هرکس یه اسمی بزاره بعدش هم اومد یه شرکت رو باز کرد با اسم پنتون pantone که بعد یه مدت با سیاست های خوب تبلغاتی (البته از نظر من) این شرکت مشهور شد و هر ساله (منظورم میلادی هست) میاد یه رنگی رو برای همه به عنوان رنگ سال انتخاب میکنه ، میگن که با طراحان و غیر برای انتخاب رنگ مشاوره میکنه و ماهم تو ایران چون چنین چیزی نداریم بدون توجه به سوالات زیر همون رنگ رو انتخاب میکنیم و تو بازار تا پیداش نکنیم خونه برو نیستیم :</p>
+<p>۱- این رنگ با فرهنگ و روحیه ما ایرانی ها مناسبه ؟!</p>
+<p>۲- این باعث نمیشه خیلی از جنس ها رو دست بمونه؟</p>
+<p>۳- این باعث نمیشه جنس های ته انباری که یهویی شانس خورده بهشون بدون هیچ توجه ای به جنس و کیفت فروخته بشه؟</p>
+<p>۴- این که کسی دیه برا ما رنگ انتخاب میکنه آزادی ما رو نمیگره و ما رو یجوری دوست ندارن کنترل کنند؟</p>
+<p>۵- و…. (برای هر کس)</p>
+<p>حتما میدونید ک هر رنگ توی هر کشوری یه معنا و مفهموم خاصی رو داره و متفاوت هست برای هرکس مثلا ما ایرانی ها رنگ سفید رو دوست داریم تو عروسی و ها پارتی ها بپوشیم در حالی که توی یه کشور تو مراسمی که برای مرده هاشون میگرن لباس سفید میپوشن .</p>
+<p>ما چون کاملا با این نوع فرهنگ مچ نشدیم ممکنه به خیلی از تولید کننده های لباس آسیب بخوره و از طرفی هم میتونه به داد کسایی که جنسشون ته انبار خاک میخورد برسه ! هرکس میتونه برای خودش این موضوع رو نقد کنه ولی به نظر خود من دارن یه چیزی رو باشیب خیلی کم به ما القا میکنن و یه جورایی حق آزادی رنگ رو از ما میگره .</p>
+<p>برای من که به عنوان یه گیک فقط اصل موضوع مهم بود که بدونم آگاهانه دارم کاری رو میکنم ، رنگ لباس های من بیشتر با توجه روحیه خودم انتخاب میشه نه چیز دیه . شاد باشید و خندون</p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/زندگی-و-عشق/">زندگی و عشق</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/رنگ-سال-۲۰۱۸/">رنگ سال ۲۰۱۸</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/رنگ-سال-۹۷/">رنگ سال ۹۷</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/چطوری-رنگ-سال-انتخاب-میشه/">چطوری رنگ سال انتخاب میشه</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/کی-رنگ-سال-رو-انتخاب-میکنه/">کی رنگ سال رو انتخاب میکنه</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-month-book-1" class="post-month-book-1 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/month-book-1/">معرفی کتاب - شماره ۱</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/month-book-1/">
+    <time datetime="2018-03-01T07:41:45.000Z" class="entry-date">
+        ۲۰۱۸-۰۳-۰۱
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>تصمیم گرفتم که از این به بعد اول هر ماه میلادی یک کتاب از کتاب های که تا الان خوندم یا میخوام بخونم رو معرفی کنم تا کسانی که دوست دارن بخونند هم گزینه های بهتری داشته باشند.<br>خوب امروز میخوام کتابی رو معرفی کنم که راجب مسائل سیاسی هست این کتاب راجب امریکا و روسیه هست و تنش های که بین این دو بوده و برسی مسائل منطقه هست اسم کتاب « یک بستر و دو رویا هست » به من این کتاب رو یکی از دوستان هدیه داده بود و الان از نسخه چاپش و … خبر ندارم و یک عکس از صفحه اول کتاب براتون قرار میدم .<br><img src="/images/photo_1.jpg" title="یک بستر و دو رویا هست"><br>اگر نسخه pdf از این کتاب رو پیدا کردید به من هم بفرستید آرشیو کنم . امیدوارم از خوندنش لذت ببرید. </p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/کتاب/">کتاب</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/معرفی-کتاب/">معرفی کتاب</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/کتاب-یک-بستر-و-دو-رویا/">کتاب یک بستر و دو رویا</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/یک-بستر-و-دو-رویا/">یک بستر و دو رویا</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-ssh-public-key" class="post-ssh-public-key post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/ssh-public-key/">ساخت کلید عمومی ssh و اضافه کردن آن به گیت هاب</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/ssh-public-key/">
+    <time datetime="2018-02-23T17:42:40.000Z" class="entry-date">
+        ۲۰۱۸-۰۲-۲۳
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>موقعی که ما یک repository رو از گیت هاب خودمون دریافت میکنیم و تغیراتی روی اون انجام میدیم و میخواییم اون رو push کنیم هر باز از ما پسورد میخواد و وارد کردن هر بار پسورد کار خسته کننده ای هست :) حداقل برای من ، توی این آموزش یاد میگریم که چطوری کلید عمومی ssh سیستمون رو بسازیم و تو گیت ها اضافه کنیم و دیه پسورد نزنیم و از طریق ssh پروژه خودمون رو دریافت کنیم از گیت هاب .</p>
+<p>در این آموزش در نظر بگیرید که من میخوام کلید عمومی ssh سیستمم رو بسازم و در گیت هاب وارد کنم و درنهایت repository سایتم رو دریافت کنم و فایل robots.txt رو اضافه کنم و دوباره در گیت هاب push کنم:</p>
+<p>خوب ابتدا باید کلید عمومی رو بسازیم برای این کار ابتدا ترمینال رو باز میکنیم و دستور زیر رو میزنیم</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -b 4096 -C &quot;username@email.com&quot;</span><br></pre></td></tr></table></figure>
+<p>بجای <a href="mailto:username@email.com" target="_blank" rel="noopener">username@email.com</a> آدرس ایمیل خودتون رو بنویسد و وارد کنید.<br>حالا در شاخه ~/.ssh/ یک فایل با نام id_rsa.pub ساخته شده با دستور زیر اون فایل رو بخونید و کلا کپی کنید متنش رو:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ‍‍~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>حالا وارد اکانت خود در گیت هاب بشید و به مسیر زیر برید </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">settings =&gt; SSH and GPG keys =&gt; New SSH key</span><br></pre></td></tr></table></figure>
+<p>در قسمت title یک اسم انتخاب کنید و در قسمت key محتوای فایل id_rsa.pub کپی کردیم رو جا گذاری کنید و دکمه add SSH key رو بزنید<br>حالا من میخوام با ssh وصل بشم به گیت باید دستور زیر رو وارد کنم</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>و حالا فایل های وب سایت رو clone میکنم با دستور زیر: (شما یه repository برای تست ایجاد کنید و روی اون انجام بدید)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git://github.com/eipro/eipro.github.io</span><br></pre></td></tr></table></figure>
+<p>حالا مسیر رو تغیر میدیم و میریم داخل دایرکتوری 1w3.github.io با دستور زیر :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd 1w3.github.io/</span><br></pre></td></tr></table></figure><br>حالا باید وصل بیشیم به پروژه خودمون با دستور زیر (زیاد میگم دستور زیر نه ؟!):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin git@github.com:1w3/1w3.github.io.git</span><br></pre></td></tr></table></figure><br>خوب حالا باید تغیرات خودمون رو انجام بدیم من با ادیتور نانو یه فایل robots.txt ساختم و داخل اون نقشه وبلاگ رو به ربات ها معرفی کردم.<br>حالا باید دستورات زیر رو اضافه کنیم تا repository توی گیت هاب آپدیت بشه و ما از وارد نکردن پسورد راحت شدیم :)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add robots.txt </span><br><span class="line">git commit -am &quot;add robots.txt&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><br>خوب این هم از این سعی کردم با مثالی که زدم راحت مطلب رو برسونم امیدوارم موفق بوده باشید.</p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/گیت/">گیت</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh/">ssh</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh-public-key/">ssh public key</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/کلید-عمومی/">کلید عمومی</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-spndar" class="post-spndar post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/spndar/">روز عشق در ایران | سپندارمذگان</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/spndar/">
+    <time datetime="2018-02-18T17:32:41.000Z" class="entry-date">
+        ۲۰۱۸-۰۲-۱۸
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>امروز ۲۹ بهمن ماه روز عشق در ایران هست و خیلی کهن تر از ولنتاین هست وقتی که ۴ روز قبل (۲۵ بهمن و ۱۴ فوریه) میبنیم که خیلی ها از شدت شوق هیجان جوری رفتار میکنن که نگو ولنتاین یه سنت ایرانی بوده و ما خبر نداشتیم :) و به هم کادو میدن .</p>
+<p>اگر نظر شخصی منو بپرسد من میگم ولنتاین تو ایران یه جوری تئاتر شده و هرکس یه نقشی رو بازی میکنه نه حسی هست نه عشقی و هرکس بخاطر نیاز خودش حالا رابطه جنسی یا احساسی یه نقشی رو پذیرفته بازی میکنه و باید روز بزرگ ترین تئاتر رو به هم تبریک بگیم اگه اینجوری پیش بره :/</p>
+<p>این خرس های بزرگ هم که یه داستانی شده نگو (اگه کسی از این کادو بزرگ ها گرفته به منم بگه کجا میزاریدش ؟) ولی بحث من ولنتاین نیست.</p>
+<p>امروز(روز عشق در ایران ) در تقویم زرتشت ۵ اسفند هست ولی در تقویم های جدید ۲۹ بهمن ماه حالا چرا ؟ چون تقویم زرتشتی ماه های که ۳۱ روزه هست رو ۳۰ روزه حساب کرده و در اصل چیزی تغیر نکرده ، اسم امروز رو “سپندار مذگان” هست و فلسفه نام گذاری این روز به این صورت هست که در زمان گذشته هر روز یه نامی خاص داشت (مثل مناسبت های امروزی بزرگ داشت فلانی) مثلا روز چهارم شهریور “روز شاهی و فرمانروایی آرمانی” که مخصوص پروردگار هست بود .</p>
+<p>“سپندار مذفر” نام زمین هست و زمین هم نماد عشق هست که بدون هیچ چشم داشتی به همه عشق می ورزد ، و روز سپندار مذگان برگرفته از زمین هست و گفتنی هم هست که روز ۵ شهریور اسمش “سپندار مذ” بوده ، سپندار مذگان روز عشق ورزی هست و مرد و زن ، دختر و پسر به هم عشق می ورزند از هم پیروی میکنند تا زندگی شادی داشته باشند در کل ما ایرانی ها زندگی شادی داشته ایم و همیشه جشن های شادی برگذار می کردیم ولی الان اینطور نیست و بیشتر گریه کردن هم رو دوست داریم و از غمگین بودن سود میبریم انگار ؟!</p>
+<p>شاد باشید ، عشق به هم دیگر ببخشید.</p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/عمومی/">عمومی</a>, <a class="article-category-link" href="/categories/عمومی/زندگی-و-عشق/">زندگی و عشق</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/روز-عشق-در-ایران/">روز عشق در ایران</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/سپندار/">سپندار</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/سپندارمذگان/">سپندارمذگان</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/عشق/">عشق</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ولنتاین/">ولنتاین</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-elseif-vs-else-if-php" class="post-elseif-vs-else-if-php post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/elseif-vs-else-if-php/">تفاوت elseif و else if در PHP</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/elseif-vs-else-if-php/">
+    <time datetime="2018-02-14T14:09:14.000Z" class="entry-date">
+        ۲۰۱۸-۰۲-۱۴
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>شاید شما هم از خودتون بپرسید چرا ؟ و چه تفاوتی بین این دو هست و چرا موقع استفاده IDE ها “elseif” رو به ما پیشنهاد میدن ؟<br>خوب باهم دلیل رو بررسی میکنیم: در وبسایت رسمی PHP همون طور که گفته شده این دو ساختار باهم در حالت نمایش خروجی با هم تفاوتی ندارند و خواصشون یکی هست ولی معنای نحوی کمی متفاوت هستش در ساختار “else if” همانند این هست که شما از کد زیر استفاده کردید</p>
+<figure class="highlight plain"><figcaption><span>کد قسمت اول</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name = &quot;Pouria;</span><br><span class="line">$num = &quot;9&quot;;</span><br><span class="line"></span><br><span class="line">if ($name == &quot;Pouria&quot;)&#123;</span><br><span class="line">	echo &quot;Name = Pouria&quot;;</span><br><span class="line">&#125;else if ($num &gt; 6)&#123;</span><br><span class="line">	echo &quot;:D&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name = &quot;Pouria&quot;;</span><br><span class="line">$num = &quot;9&quot;;</span><br><span class="line"></span><br><span class="line">if ($name == &quot;Pouria&quot;)&#123;</span><br><span class="line">	echo &quot;Name = Pouria&quot;;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">  if ($num &gt; 6)&#123;</span><br><span class="line">	echo &quot;:D&quot;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>مثال بالا یه مثال ساده بود که میگه چرا نباید ساختار “else if” رو بصورت دو کلمه ای استفاده کنیم البته شما موقع نوشتن ساختار if اگر از {} استفاده کنید مشکلی نداره ولی اگه از ساختار : استفاده کنید با خطا مواجه میشید به مثال توجه کنید:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name = &quot;Pouria&quot;;</span><br><span class="line">$num = &quot;9&quot;;</span><br><span class="line">if ($name == &quot;Pouria&quot;):</span><br><span class="line">	echo &quot;Name = Pouria&quot;;</span><br><span class="line">else if ($num &gt; 6):</span><br><span class="line">	echo &quot;:D&quot;;</span><br><span class="line">endif;</span><br></pre></td></tr></table></figure><br>خوب من توی مثال بالا از : استفاده کردم و (else if) رو بصورت دو کلمه ای نوشتم اگر کد رو اجر کنید با خطای مشابه این خطا رو به رو میشید:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Parse error: syntax error, unexpected &apos;if&apos; (T_IF), expecting &apos;:&apos; in.........</span><br></pre></td></tr></table></figure><br>من این توضحات رو با پیش فرض اینکه شما به زبان برنامه نویسی PHP تسلط دارید نوشتم امید وارم موفق باشید.</p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/پی-اچ-پی/">پی اچ پی</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/else-if-vs-elseif/">else if vs elseif</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/تفاوت-elseif-و-else-if-در-PHP/">تفاوت elseif و else if در PHP</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+    <article id="post-reworking-blog" class="post-reworking-blog post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/reworking-blog/">ساخت دوباره وبلاگ</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/reworking-blog/">
+    <time datetime="2018-02-11T11:05:05.000Z" class="entry-date">
+        ۲۰۱۸-۰۲-۱۱
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>اگر قبلا وبلاگ من رو دیده بودید که جکیل ساخته بودم که یک به وبلاگ ساز استاتیک هست و با زبان روبی نوشته شده هست حقیقت یکم دلمو میزد نه برای اینکه جکیل بد باشه برای اینکه من روبی بلد نیستم و فعلا هم علاقه ای برای یادگیرش ندارم (مشغول چیز دیه هستم در آینده شروع میکنم روبی رو) بس توی زمین بازی جکیل برای من جایی نبود دنبال یه معادل بود که هم قوی باشه هم برای من جای بازی داشته باشه :) و در نهایت از تعداد زیاد وبلاگ ساز استاتیک(نمیدونم کلمه “وبلاگ ساز استاتیک” ترجمه مناسبی هست یا نه؟!) Hexo رو انتخاب کردم که با زبان جاوا اسکریپت نوشته شده و باهاش مشکلی ندارم</p>
+<p>خوب من وبلاگم رو با Hexo ساختم و ترکیباتش قالب دیفالتش هست که از همین هم راضی هستم هم خوشگله به نظرم :D و من یکم تغیرات توش انجام دادم و زبان فارسی برای قالب نوشتم و خود قالب رو برای زبان ها rtl بهینه کردم و در آینده هم یکم تغیرات بیشتر میدم تا خوشگل تر هم بشه :) و اما در پست های بعدی اساسی با هگزو آشنا میشیم و باهاش وبلاگ میسازیم و در نهایت هم یه شعر بخونید از خیام , خوبه !</p>
+<p>برخیز و بیا بتا برای دل ما [===] حل کن به جمال خویشتن مشکل ما</p>
+<p>یک کوزه شراب تا بهم نوش کنیم [===] زان پیش که کوزه‌ها کنند از گل ما</p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/عمومی/">عمومی</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/مردی-با-کیبورد/">مردی با کیبورد</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/وبلاگ-با-گیت-هاب/">وبلاگ با گیت هاب</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+
+
+
+
+  
+  
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s">
+        <input type="submit" id="searchsubmit" value="جست جو">
+    </div>
+</form></aside>
+
+  
+    
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">اخیرا</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/tor-exit-node-country-list/">لیست کشور های exit node برای تور</a>
+          </li>
+        
+          <li>
+            <a href="/New-blog-theme/">قالب جدبد وبلاگ</a>
+          </li>
+        
+          <li>
+            <a href="/month-book-2/">معرفی کتاب - شماره ۲</a>
+          </li>
+        
+          <li>
+            <a href="/Contact-form-with-Telegram-Bot-API/">فرم تماس با استفاده از API تلگرام</a>
+          </li>
+        
+          <li>
+            <a href="/color-year/">انتخاب رنگ سال | چرا ؟ چگونه؟ از کی؟</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">دسته بندی ها</h3>
+    <div class="widget-content">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/تور/">تور</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/زندگی-و-عشق/">زندگی و عشق</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/عمومی/">عمومی</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/عمومی/زندگی-و-عشق/">زندگی و عشق</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/پی-اچ-پی/">پی اچ پی</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/کتاب/">کتاب</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/گیت/">گیت</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+
+  
+    <aside class="widget">
+  <h3 class="widget-title">دسته بندی ها</h3>
+  <div class="widget-content">
+    <ul>
+      <li><a href="">link1</a></li>
+      <li><a href="">link2</a></li>
+      <li><a href="">link3</a></li>
+    </ul>
+  </div>
+</aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; ۲۰۱۹
+        مطالب این وبلاگ تحت مجوز
+        <a href="http://creativecommons.org/licenses/by/4.0/deed.fa">کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال</a>
+        قرار دارد.
+    </p>
+    <p>قدرت گرفته از <a href="http://hexo.io/" target="_blank">هگزو</a></p>
+</footer>
+
+    
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>

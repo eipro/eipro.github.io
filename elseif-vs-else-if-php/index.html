@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+
+  
+  <meta name="description" content="توی این وبلاگ سعی میکنم از خودم , دنیا , علم و مردم یا هرچیزی که تعجب آور باشه برام و یا مهم باشه بنویسم">
+  
+
+  
+
+  
+  
+
+  
+  <title>تفاوت elseif و else if در PHP | مردی با کیبورد</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="شاید شما هم از خودتون بپرسید چرا ؟ و چه تفاوتی بین این دو هست و چرا موقع استفاده IDE ها “elseif” رو به ما پیشنهاد میدن ؟خوب باهم دلیل رو بررسی میکنیم: در وبسایت رسمی PHP همون طور که گفته شده این دو سا">
+<meta name="keywords" content="تفاوت elseif و else if در PHP,php,else if vs elseif">
+<meta property="og:type" content="article">
+<meta property="og:title" content="تفاوت elseif و else if در PHP">
+<meta property="og:url" content="https://eipro.github.io/elseif-vs-else-if-php/index.html">
+<meta property="og:site_name" content="مردی با کیبورد">
+<meta property="og:description" content="شاید شما هم از خودتون بپرسید چرا ؟ و چه تفاوتی بین این دو هست و چرا موقع استفاده IDE ها “elseif” رو به ما پیشنهاد میدن ؟خوب باهم دلیل رو بررسی میکنیم: در وبسایت رسمی PHP همون طور که گفته شده این دو سا">
+<meta property="og:locale" content="fa">
+<meta property="og:updated_time" content="2019-02-04T17:35:08.715Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="تفاوت elseif و else if در PHP">
+<meta name="twitter:description" content="شاید شما هم از خودتون بپرسید چرا ؟ و چه تفاوتی بین این دو هست و چرا موقع استفاده IDE ها “elseif” رو به ما پیشنهاد میدن ؟خوب باهم دلیل رو بررسی میکنیم: در وبسایت رسمی PHP همون طور که گفته شده این دو سا">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rtl.css">
+  
+
+
+  <!-- baidu webmaster push -->
+  <!-- <script src='//push.zhanzhang.baidu.com/push.js'></script> -->
+</head>
+</html>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="مردی با کیبورد" rel="home">مردی با کیبورد</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">مینویسم پس هستم</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">منو</button>
+            <a class="assistive-text" href="/#content" title="بالا">بالا</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">صفحه اول</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">آرشیو</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about">تماس و درباره</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-elseif-vs-else-if-php" class="post-elseif-vs-else-if-php post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      تفاوت elseif و else if در PHP
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+       تاریخ : <a href="/elseif-vs-else-if-php/">
+    <time datetime="2018-02-14T14:09:14.000Z" class="entry-date">
+        ۲۰۱۸-۰۲-۱۴
+    </time>
+</a>
+
+    <div class="entry-content">
+      
+        <p>شاید شما هم از خودتون بپرسید چرا ؟ و چه تفاوتی بین این دو هست و چرا موقع استفاده IDE ها “elseif” رو به ما پیشنهاد میدن ؟<br>خوب باهم دلیل رو بررسی میکنیم: در وبسایت رسمی PHP همون طور که گفته شده این دو ساختار باهم در حالت نمایش خروجی با هم تفاوتی ندارند و خواصشون یکی هست ولی معنای نحوی کمی متفاوت هستش در ساختار “else if” همانند این هست که شما از کد زیر استفاده کردید</p>
+<figure class="highlight plain"><figcaption><span>کد قسمت اول</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name = &quot;Pouria;</span><br><span class="line">$num = &quot;9&quot;;</span><br><span class="line"></span><br><span class="line">if ($name == &quot;Pouria&quot;)&#123;</span><br><span class="line">	echo &quot;Name = Pouria&quot;;</span><br><span class="line">&#125;else if ($num &gt; 6)&#123;</span><br><span class="line">	echo &quot;:D&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name = &quot;Pouria&quot;;</span><br><span class="line">$num = &quot;9&quot;;</span><br><span class="line"></span><br><span class="line">if ($name == &quot;Pouria&quot;)&#123;</span><br><span class="line">	echo &quot;Name = Pouria&quot;;</span><br><span class="line">&#125;else&#123;</span><br><span class="line">  if ($num &gt; 6)&#123;</span><br><span class="line">	echo &quot;:D&quot;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>مثال بالا یه مثال ساده بود که میگه چرا نباید ساختار “else if” رو بصورت دو کلمه ای استفاده کنیم البته شما موقع نوشتن ساختار if اگر از {} استفاده کنید مشکلی نداره ولی اگه از ساختار : استفاده کنید با خطا مواجه میشید به مثال توجه کنید:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name = &quot;Pouria&quot;;</span><br><span class="line">$num = &quot;9&quot;;</span><br><span class="line">if ($name == &quot;Pouria&quot;):</span><br><span class="line">	echo &quot;Name = Pouria&quot;;</span><br><span class="line">else if ($num &gt; 6):</span><br><span class="line">	echo &quot;:D&quot;;</span><br><span class="line">endif;</span><br></pre></td></tr></table></figure><br>خوب من توی مثال بالا از : استفاده کردم و (else if) رو بصورت دو کلمه ای نوشتم اگر کد رو اجر کنید با خطای مشابه این خطا رو به رو میشید:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Parse error: syntax error, unexpected &apos;if&apos; (T_IF), expecting &apos;:&apos; in.........</span><br></pre></td></tr></table></figure><br>من این توضحات رو با پیش فرض اینکه شما به زبان برنامه نویسی PHP تسلط دارید نوشتم امید وارم موفق باشید.</p>
+
+      
+      <footer class="entry-meta">
+
+      
+  <span class="article-delim">دسته بندی :</span>
+  <div class="article-category">
+  <a class="article-category-link" href="/categories/پی-اچ-پی/">پی اچ پی</a>
+  </div>
+
+
+      
+  <span class="article-delim">برچسب ها: </span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/else-if-vs-elseif/">else if vs elseif</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/تفاوت-elseif-و-else-if-در-PHP/">تفاوت elseif و else if در PHP</a></li></ul>
+
+
+      </footer>
+    </div><!-- .entry-content -->
+
+
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">menu</h3>
+    
+        <span class="nav-previous"><a href="/spndar/" rel="prev"><span class="meta-nav">←</span> روز عشق در ایران | سپندارمذگان</a></span>
+    
+    
+        <span class="nav-next"><a href="/reworking-blog/" rel="next">ساخت دوباره وبلاگ <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s">
+        <input type="submit" id="searchsubmit" value="جست جو">
+    </div>
+</form></aside>
+
+  
+    
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">اخیرا</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/tor-exit-node-country-list/">لیست کشور های exit node برای تور</a>
+          </li>
+        
+          <li>
+            <a href="/New-blog-theme/">قالب جدبد وبلاگ</a>
+          </li>
+        
+          <li>
+            <a href="/month-book-2/">معرفی کتاب - شماره ۲</a>
+          </li>
+        
+          <li>
+            <a href="/Contact-form-with-Telegram-Bot-API/">فرم تماس با استفاده از API تلگرام</a>
+          </li>
+        
+          <li>
+            <a href="/color-year/">انتخاب رنگ سال | چرا ؟ چگونه؟ از کی؟</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">دسته بندی ها</h3>
+    <div class="widget-content">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/تور/">تور</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/زندگی-و-عشق/">زندگی و عشق</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/عمومی/">عمومی</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/عمومی/زندگی-و-عشق/">زندگی و عشق</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/پی-اچ-پی/">پی اچ پی</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/کتاب/">کتاب</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/گیت/">گیت</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+
+  
+    <aside class="widget">
+  <h3 class="widget-title">دسته بندی ها</h3>
+  <div class="widget-content">
+    <ul>
+      <li><a href="">link1</a></li>
+      <li><a href="">link2</a></li>
+      <li><a href="">link3</a></li>
+    </ul>
+  </div>
+</aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; ۲۰۱۹
+        مطالب این وبلاگ تحت مجوز
+        <a href="http://creativecommons.org/licenses/by/4.0/deed.fa">کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال</a>
+        قرار دارد.
+    </p>
+    <p>قدرت گرفته از <a href="http://hexo.io/" target="_blank">هگزو</a></p>
+</footer>
+
+    
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
